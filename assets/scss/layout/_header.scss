@@ -1,0 +1,108 @@
+.header {
+    position: relative;
+    height: 100vh;
+    min-height: 500px;
+    background: url(../imgs/header.jpg) no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+
+    .overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba($black,.7);
+        color: $white;
+        @include flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        .subtitle {
+            font-size: calc(13px + (18 - 13) * ((100vw - 320px) / (1200 - 320)));
+            font-weight: 400;
+            margin-bottom: 0;
+            letter-spacing: 8px;
+            word-spacing: 10px;
+            text-align: center;
+            opacity: .8;
+        }
+
+        .title {
+            font-size: calc(30px + (70 - 30) * ((100vw - 320px) / (1200 - 320)));           
+            font-weight: bold;
+        }
+
+    }
+
+    .shape {
+        
+        svg {
+            position: absolute;
+            bottom: -28px;
+            left: 0;
+            width: 100%;
+            z-index: 9;
+
+            path {
+                fill: $white;
+            }
+        }
+
+        @include media-breakpoint-down(lg) {
+            svg {
+                bottom: -15px;              
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            svg {
+                bottom: 0;              
+            }
+        }
+    }
+
+    &.components-header {
+        max-height: 450px !important;
+        height: 450px;
+        dispaly: none;
+        background-position: center -140px;
+
+
+
+        .title {
+            font-size: calc(40px + (90 - 40) * ((100vw - 320px) / (1200 - 320)));
+            font-weight: bold;
+            margin-top: -8%;
+        }
+
+        .shape {
+
+            svg path {
+                fill: darken(#f9fbfd,1%);
+            }
+        }
+    }
+
+      // header title
+    &-title {
+        font-size: 2.4rem;
+        font-weight: bold;
+        opacity: .8;
+        color: $body-color;
+    }
+
+    // header mini
+    &-mini {
+        min-height: 24rem;
+        height: 24rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem;
+        background: lighten($primary, 20%);
+    }
+
+}

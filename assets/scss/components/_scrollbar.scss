@@ -1,0 +1,12 @@
+::-webkit-scrollbar {
+    width: 7px;
+    background: $white;
+}
+::-webkit-scrollbar-thumb {
+    background: darken($primary,5%);
+    border-radius: 20px;
+
+    &:hover {
+        background: $primary;
+    }
+}

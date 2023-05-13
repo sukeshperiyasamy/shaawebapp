@@ -1,0 +1,26 @@
+.form-control {
+	height: 40px;
+	line-height: 30px;
+	border-width: 0 0 2px 0;
+	font-size: 14px;
+
+	&:focus {
+		border-color: $primary;
+	}
+
+	&.form-control-sm {
+		height: 30px;
+		line-height: 35px;
+		font-size: 13px;
+	}
+	&.form-control-lg {
+		font-size: 16px;
+		height: 50px;
+		line-height: 60px;
+	}
+}
+
+select.form-control,
+textarea.form-control {
+	line-height: $line-height-base;
+}

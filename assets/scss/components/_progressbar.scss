@@ -1,0 +1,16 @@
+.progress {
+	position: relative;
+	overflow: visible;
+
+	.progress-bar {
+		border-radius: 20px;
+
+		span {
+			position: absolute;
+			top: -32px;
+			right: 0;
+			color: $body-color;
+			font-weight: 400;
+		}
+	}
+}

@@ -1,0 +1,60 @@
+.navbar {
+    @include transition(all,.3s);
+
+    &.navbar-dark {
+
+        .navbar-brand {
+            color: $white;
+        }
+    }
+
+    &.navbar-light {
+
+        .navbar-brand {
+            color: $gray-900;
+        }
+    }
+
+    .navbar-brand {
+
+        img {
+            width: 60px;
+        }
+    }
+        
+    .nav-link {
+        font-size: 13px;
+        font-weight: 600;       
+    }
+
+    &.custom-navbar {
+        padding-top: $navbar-padding-y;
+        padding-bottom: $navbar-padding-y;
+
+        .nav-link {
+            color: $white;
+            margin: 0 6px;
+
+            &:hover {
+                color: $white;
+            }
+        }
+
+        &.affix {
+            padding-top: $navbar-affix-padding-y;
+            padding-bottom: $navbar-affix-padding-y;
+            background: $white;
+            // box-shadow: 0 1px 10px rgba($gray-400,.6);
+            border-bottom: 1px solid $border-color;
+
+            .nav-link {
+                color: $body-color;
+
+
+                &:hover {
+                    color: $black;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,181 @@
+//
+// Color system
+//
+
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #1b1b1b;
+$black:    #000;
+
+$grays: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$grays: map-merge(
+  (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+  ),
+  $grays
+);
+
+
+$blue:    #007bff;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #e83e8c;
+$red:     #eb4d4b;
+$orange:  #fd7e14;
+$yellow:  #EE5A24;
+$green:   #6ab04c;
+$teal:    #00cec9;
+$cyan:    #1289A7;
+$primary: #ff6e42;
+
+$colors: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge(
+  (
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-900,
+  ),
+  $colors
+);
+
+$primary:       $primary;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-900;
+
+$theme-colors: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
+  ),
+  $theme-colors
+);
+
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:                   $white;
+$body-color:                #444;
+
+
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:      'Poppins', sans-serif;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base:            $font-family-sans-serif;
+// stylelint-enable value-keyword-case
+
+
+
+
+// Pagination
+$pagination-padding-y:              0rem;
+$pagination-padding-x:              0rem;
+$pagination-padding-y-sm:           0rem;
+$pagination-padding-x-sm:           0rem;
+$pagination-padding-y-lg:           0rem ;
+$pagination-padding-x-lg:           0rem ;
+$pagination-border-color:           transparent;
+$pagination-color:                  $gray-800;
+$pagination-hover-bg:               rgba($primary, .3);
+$pagination-hover-border-color:     transparent;
+
+
+// Breadcrumbs
+$breadcrumb-padding-y:              .55rem;
+$breadcrumb-bg:                     transparent;
+$breadcrumb-font-size:              .9rem;
+
+$breadcrumb-divider-color:          $gray-900;
+$breadcrumb-active-color:           $gray-700;
+$breadcrumb-link-color:             $gray-900;
+$breadcrumb-divider:                quote("·");
+
+
+
+// Navbar
+$navbar-padding-y:                  1.5rem;
+$navbar-affix-padding-y:            .4rem;
+$navbar-nav-link-padding-x:         .8rem;
+$navbar-light-color:                rgba($black, .8);
+
+
+// buttons
+$btn-border-radius:           .1rem;
+$btn-border-radius-lg:        .2rem;
+$btn-border-radius-sm:        .05;
+
+
+
+// forms
+$input-border-radius:            0;
+$input-border-radius-sm:         0;
+$input-border-radius-lg:         0;
+$input-bg:                       transparent;
+$input-focus-box-shadow:         none;
+
+
+// Progress bars
+$progress-height:                   .3rem;
+
+
+// cards
+$card-border-radius:                0;
+
+
+
+// links
+$link-hover-decoration:     none;
+
+
+
+
+
+
+

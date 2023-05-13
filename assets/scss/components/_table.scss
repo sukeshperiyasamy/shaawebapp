@@ -1,0 +1,33 @@
+.table {
+
+	&.v-align-center {
+		th,td {
+			vertical-align: middle !important;
+		}
+	}
+
+	thead {
+		th {
+			border-width: 1px;
+		}
+	}
+	td,th {
+		border-top: 0;
+		border-bottom: 1px solid $table-border-color;
+	}
+
+	&.table-striped {
+
+		tbody {
+
+			tr:nth-child(odd) {
+				background: darken($gray-100,2%);
+			}
+
+		}
+			
+		td,th {
+			border-width: 0;
+		}
+	}
+}

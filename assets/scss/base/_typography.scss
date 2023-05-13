@@ -1,0 +1,51 @@
+p {
+    font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (1200 - 320)));
+    font-weight: 400;
+    opacity: .8;
+    line-height: 1.5;
+}
+
+pre {
+    border: 2px solid $border-color;
+    padding: 15px;
+    border-radius: $border-radius;
+    background: $gray-100;
+
+    code,
+    .code {
+        color: $gray-600;
+    }
+}
+
+@include media-breakpoint-up (lg) {
+
+    p {
+        font-size: 14px;
+    }
+}
+
+
+hr {
+    margin: 10px 0 25px;
+}
+
+
+
+// Dark Background
+.bg-dark {
+
+    p {
+        color: $white
+    }
+
+    a {
+        color: rgba($white,.7);
+
+        &:hover {
+            color: rgba($white,.85);            
+        }
+        &:active {
+            color: $white;          
+        }
+    }
+}

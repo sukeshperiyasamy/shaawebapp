@@ -1,0 +1,32 @@
+// middle
+@mixin middle() {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+// transition
+@mixin custom-transition($property,$time) {
+	-webkit-transition: $property $time + s;
+	-o-transition: $property $time + s;
+	transition: $property $time + s
+}
+
+
+// display flex
+@mixin flex() {
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex; 
+	display: flex;
+}
+
+// circle 
+@mixin circle($wh) {
+	width: $wh + px;
+	height: $wh + px;
+	border-radius: 50%;
+}
